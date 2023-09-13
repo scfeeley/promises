@@ -1,8 +1,8 @@
 function stretch() {
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve) => {
     setTimeout(() => {
-      resolve();
       console.log("done stretching");
+      resolve();
     }, 1000)
   });
 }
@@ -19,8 +19,8 @@ function runOnTreadmill() {
 function liftWeights() {
   return new Promise((resolve) => {
     setTimeout(() => {
-      resolve();
       console.log("done lifting weights");
+      resolve();
     }, 2000)
   });
 }
